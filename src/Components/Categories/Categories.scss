@@ -1,0 +1,34 @@
+.categories {
+    align-items: center;
+    background: #000;
+    color: navajowhite;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80vh;
+    justify-content: center;
+    width: 100%;
+    
+
+    div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    img {
+        width: 160px;
+        margin: 5px;
+        transition: all 0.4s ease;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    h3 {
+        align-self: center;
+    }
+
+}

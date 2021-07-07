@@ -1,0 +1,56 @@
+.navbar{
+    align-items: center;
+    background:#000;
+    border-bottom: 1px navajowhite solid;
+    color:yellow;
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    justify-content: space-between;
+    left: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+//Navbar parent END
+
+    //Using &-classChild{}. Nosotros podremos usarlo para llamar una clase contenida dentro de la clase padre
+    //para usarlo lo recomendado es que herede el nombre de la clase padre y seguidamente dar el nombre deseado.
+    //Ej: <div className="navbar"><div className="navbar-heading"></div></div>
+    //Así que "heading" es el argumento que vamos a usar al utilizar <&-Child>
+    &-heading{
+        h1{
+            font-size: 30px;
+            margin-left: 20px;
+            
+        }
+
+        span{
+            color: orange;
+        }
+    }
+
+    &-links{
+        ul{
+            display: flex;
+            list-style: none;
+        }
+
+        a{
+            background: lighten($color: #000000, $amount: 15);
+            border-radius: 5px;
+            color: white;
+            font-size: 20px ;
+            margin: 0px 10px;           //0px up-down 10px left-right  said this as a note.
+            padding: 10px;
+            text-decoration: none;
+            transition: all 0.4s ease;
+
+            &:hover{
+                color: orange;
+            }
+            
+        }
+    }
+}
+

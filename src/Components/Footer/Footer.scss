@@ -1,0 +1,17 @@
+.footer {
+    align-items: center;
+    background: #000;
+    border-top: 3px orange solid;
+    color: #fff;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    text-align: center;
+
+    p{
+        font-size: 18px;
+        span{
+            color: orange;
+        }
+    }
+}

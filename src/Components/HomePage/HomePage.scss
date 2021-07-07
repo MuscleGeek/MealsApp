@@ -1,0 +1,71 @@
+.home {
+    align-items: center;
+    background: #000;
+    border-top: 3px orange solid;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;  
+    width: 100%; 
+    cursor: pointer;
+    
+    &-search {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        input {
+            border: 1px navajowhite solid;
+            border-radius: 10px;
+            font-size: 17px;
+            margin: 20px 0;
+            outline: none;
+            padding: 9px;
+            width: 300px;
+
+        }
+
+        button {
+            background: lighten($color: orange, $amount: 2);
+            border: 1px yellow solid;
+            border-radius: 5px;
+            font-size: 17px;
+            font-weight: bold;
+            margin-left: 10px;
+            outline: none;
+            padding: 5px;
+        }
+    }
+
+    &-gridview{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+            
+
+        img{
+            border: 1px yellow solid;
+            border-radius: 12px;
+            margin: 10px;
+            transition: all 0.4s ease;
+            width: 250px;
+
+            &:hover {
+                    transform: scale(1.1);
+            }
+
+        }
+
+            .home-meal{
+                text-align: center;
+            }
+
+
+    }
+    
+}

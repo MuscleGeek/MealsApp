@@ -1,0 +1,62 @@
+.random {
+    align-items: center;
+    background: #000;
+    color: navajowhite;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    
+    
+    img {
+        border: 1px yellow solid;
+        width: 300px;
+        border-radius: 10px;
+        transition: all 0.4s ease;
+
+        &:hover {
+            color: orange;
+            transform: scale(1.2);
+        }
+    }
+
+    &-grid {
+        &-control {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 22px;
+
+            button {
+                background: lighten($color: #000, $amount: 12);
+                border: 1px #000 solid;
+                border-radius: 5px;
+                color: orange;
+                font-size: 18px;
+                margin-top: 12 px;
+                outline: none;
+                padding: 10px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        }
+        &-instructions {
+            text-align: center;
+            padding: 15px;
+            
+            p{
+                font-size: 20px;
+                
+            }
+
+        }
+
+        
+        
+    }
+
+}
