@@ -7,11 +7,20 @@
     height: 10vh;
     justify-content: center;
     text-align: center;
+    
 
     p{
         font-size: 18px;
+        font-weight: bold;
         span{
             color: orange;
+
+        }
+
+        .prefix {
+            color:yellow;
         }
     }
+
+    
 }
